@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B5164FE265D0CEE00B18509 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5164FD265D0CEE00B18509 /* Helper.swift */; };
+		6B64BDC0265CA8A1002AE024 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64BDBF265CA8A1002AE024 /* BlurView.swift */; };
+		6B64BDC7265CB08C002AE024 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B64BDC6265CB08C002AE024 /* APIManager.swift */; };
+		6B656638265BAE78007A81D7 /* Find_Vaccine_SlotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B656637265BAE78007A81D7 /* Find_Vaccine_SlotApp.swift */; };
+		6B65663A265BAE78007A81D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B656639265BAE78007A81D7 /* ContentView.swift */; };
+		6B65663C265BAE7F007A81D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B65663B265BAE7F007A81D7 /* Assets.xcassets */; };
+		6B65663F265BAE7F007A81D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B65663E265BAE7F007A81D7 /* Preview Assets.xcassets */; };
+		6B656649265BB03C007A81D7 /* DataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B656648265BB03C007A81D7 /* DataInfo.swift */; };
+		6B82DC33267A0DA400727DE5 /* SlotData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82DC32267A0DA400727DE5 /* SlotData.swift */; };
+		6BE4A0AC267C4BB700E80459 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4A0AB267C4BB700E80459 /* SplashView.swift */; };
+		90BEE814BA7EAC81555E3827 /* Pods_Find_Vaccine_Slot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC1ACE8064304A7AC441914 /* Pods_Find_Vaccine_Slot.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		335246CB8258EB032F0DBC9C /* Pods-Find Vaccine Slot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find Vaccine Slot.release.xcconfig"; path = "Target Support Files/Pods-Find Vaccine Slot/Pods-Find Vaccine Slot.release.xcconfig"; sourceTree = "<group>"; };
+		4FC1ACE8064304A7AC441914 /* Pods_Find_Vaccine_Slot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find_Vaccine_Slot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E35E0A2CAC1DC2E6C0A9AD7 /* Pods-Find Vaccine Slot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find Vaccine Slot.debug.xcconfig"; path = "Target Support Files/Pods-Find Vaccine Slot/Pods-Find Vaccine Slot.debug.xcconfig"; sourceTree = "<group>"; };
+		6B5164FD265D0CEE00B18509 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		6B64BDBF265CA8A1002AE024 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		6B64BDC6265CB08C002AE024 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		6B656634265BAE78007A81D7 /* Find Vaccine Slot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Vaccine Slot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B656637265BAE78007A81D7 /* Find_Vaccine_SlotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_Vaccine_SlotApp.swift; sourceTree = "<group>"; };
+		6B656639265BAE78007A81D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6B65663B265BAE7F007A81D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B65663E265BAE7F007A81D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B656640265BAE7F007A81D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B656648265BB03C007A81D7 /* DataInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInfo.swift; sourceTree = "<group>"; };
+		6B82DC32267A0DA400727DE5 /* SlotData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotData.swift; sourceTree = "<group>"; };
+		6BE4A0AB267C4BB700E80459 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B656631265BAE78007A81D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90BEE814BA7EAC81555E3827 /* Pods_Find_Vaccine_Slot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01E26AFFF4D66362BDB8E714 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E35E0A2CAC1DC2E6C0A9AD7 /* Pods-Find Vaccine Slot.debug.xcconfig */,
+				335246CB8258EB032F0DBC9C /* Pods-Find Vaccine Slot.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6B65662B265BAE78007A81D7 = {
+			isa = PBXGroup;
+			children = (
+				6B656636265BAE78007A81D7 /* Find Vaccine Slot */,
+				6B656635265BAE78007A81D7 /* Products */,
+				01E26AFFF4D66362BDB8E714 /* Pods */,
+				94680CD5A2300EB267B6D6C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B656635265BAE78007A81D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B656634265BAE78007A81D7 /* Find Vaccine Slot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B656636265BAE78007A81D7 /* Find Vaccine Slot */ = {
+			isa = PBXGroup;
+			children = (
+				6B64BDC6265CB08C002AE024 /* APIManager.swift */,
+				6B64BDBF265CA8A1002AE024 /* BlurView.swift */,
+				6B656637265BAE78007A81D7 /* Find_Vaccine_SlotApp.swift */,
+				6B656639265BAE78007A81D7 /* ContentView.swift */,
+				6B65663B265BAE7F007A81D7 /* Assets.xcassets */,
+				6B656640265BAE7F007A81D7 /* Info.plist */,
+				6B65663D265BAE7F007A81D7 /* Preview Content */,
+				6B656648265BB03C007A81D7 /* DataInfo.swift */,
+				6B5164FD265D0CEE00B18509 /* Helper.swift */,
+				6B82DC32267A0DA400727DE5 /* SlotData.swift */,
+				6BE4A0AB267C4BB700E80459 /* SplashView.swift */,
+			);
+			path = "Find Vaccine Slot";
+			sourceTree = "<group>";
+		};
+		6B65663D265BAE7F007A81D7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6B65663E265BAE7F007A81D7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		94680CD5A2300EB267B6D6C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FC1ACE8064304A7AC441914 /* Pods_Find_Vaccine_Slot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B656633265BAE78007A81D7 /* Find Vaccine Slot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B656643265BAE7F007A81D7 /* Build configuration list for PBXNativeTarget "Find Vaccine Slot" */;
+			buildPhases = (
+				738C1159C38AD77A2528C331 /* [CP] Check Pods Manifest.lock */,
+				6B656630265BAE78007A81D7 /* Sources */,
+				6B656631265BAE78007A81D7 /* Frameworks */,
+				6B656632265BAE78007A81D7 /* Resources */,
+				2D175F07C5FA89B6CD84C409 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find Vaccine Slot";
+			productName = "Find Vaccine Slot";
+			productReference = 6B656634265BAE78007A81D7 /* Find Vaccine Slot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B65662C265BAE78007A81D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					6B656633265BAE78007A81D7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 6B65662F265BAE78007A81D7 /* Build configuration list for PBXProject "Find Vaccine Slot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B65662B265BAE78007A81D7;
+			productRefGroup = 6B656635265BAE78007A81D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B656633265BAE78007A81D7 /* Find Vaccine Slot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B656632265BAE78007A81D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B65663F265BAE7F007A81D7 /* Preview Assets.xcassets in Resources */,
+				6B65663C265BAE7F007A81D7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D175F07C5FA89B6CD84C409 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Find Vaccine Slot/Pods-Find Vaccine Slot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Find Vaccine Slot/Pods-Find Vaccine Slot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Find Vaccine Slot/Pods-Find Vaccine Slot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		738C1159C38AD77A2528C331 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Find Vaccine Slot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B656630265BAE78007A81D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B65663A265BAE78007A81D7 /* ContentView.swift in Sources */,
+				6BE4A0AC267C4BB700E80459 /* SplashView.swift in Sources */,
+				6B64BDC0265CA8A1002AE024 /* BlurView.swift in Sources */,
+				6B64BDC7265CB08C002AE024 /* APIManager.swift in Sources */,
+				6B82DC33267A0DA400727DE5 /* SlotData.swift in Sources */,
+				6B656649265BB03C007A81D7 /* DataInfo.swift in Sources */,
+				6B656638265BAE78007A81D7 /* Find_Vaccine_SlotApp.swift in Sources */,
+				6B5164FE265D0CEE00B18509 /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6B656641265BAE7F007A81D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B656642265BAE7F007A81D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B656644265BAE7F007A81D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E35E0A2CAC1DC2E6C0A9AD7 /* Pods-Find Vaccine Slot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Find Vaccine Slot/Preview Content\"";
+				DEVELOPMENT_TEAM = 49G493678D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Find Vaccine Slot/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.findVaccineSlot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6B656645265BAE7F007A81D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 335246CB8258EB032F0DBC9C /* Pods-Find Vaccine Slot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Find Vaccine Slot/Preview Content\"";
+				DEVELOPMENT_TEAM = 49G493678D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Find Vaccine Slot/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.findVaccineSlot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B65662F265BAE78007A81D7 /* Build configuration list for PBXProject "Find Vaccine Slot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B656641265BAE7F007A81D7 /* Debug */,
+				6B656642265BAE7F007A81D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B656643265BAE7F007A81D7 /* Build configuration list for PBXNativeTarget "Find Vaccine Slot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B656644265BAE7F007A81D7 /* Debug */,
+				6B656645265BAE7F007A81D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B65662C265BAE78007A81D7 /* Project object */;
+}
