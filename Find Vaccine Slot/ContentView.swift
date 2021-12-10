@@ -76,6 +76,7 @@ struct ContentView: View {
                                     isMarked: $ageLimit.wrappedValue == "18" ? true : false,
                                     callback: { selected in
                                         self.ageLimit = selected
+                                        self.feeType = "All"
                                         print("Selected age is: \(selected)")
                                         filterDataArray = slotDataArray.filter({$0.minAgeLimit == 18})
                                     }
@@ -89,6 +90,7 @@ struct ContentView: View {
                                     isMarked: $ageLimit.wrappedValue == "45" ? true : false,
                                     callback: { selected in
                                         self.ageLimit = selected
+                                        self.feeType = "All"
                                         print("Selected age is: \(selected)")
                                         filterDataArray = slotDataArray.filter({$0.minAgeLimit == 45})
                                     }

@@ -104,44 +104,42 @@ extension ContentView{
         let formatter3 = DateFormatter()
         formatter3.dateFormat = "dd-MM-yyyy"
         let date1 = (formatter3.string(from: date))
-       
+        
         ServiceHelper.sharedInstance.callAPIForGetMethod("pincode=\(pincode)&date=\(date1)", completionBlock: { (response,_,_,status)  in
             if status == "200"{
-            
-            guard let responseData = response else { return }
-            
-            self.slotDataArray.removeAll()
-            self.filterDataArray.removeAll()
-            
-            do {
-                let decoder = JSONDecoder()
-                let data = try decoder.decode(DataInfo.self, from: responseData)
                 
-                for dat in data.sessions!{
-                    self.slotDataArray.append(dat)
-                }
+                guard let responseData = response else { return }
                 
-                if slotDataArray.count > 0{
-                    filterDataArray = slotDataArray
-                    ageLimit = "All"
-                    feeType = "All"
-                }else{
-                    showAlert.toggle()
+                self.slotDataArray.removeAll()
+                self.filterDataArray.removeAll()
+                
+                do {
+                    let decoder = JSONDecoder()
+                    let data = try decoder.decode(DataInfo.self, from: responseData)
+                    
+                    for dat in data.sessions!{
+                        self.slotDataArray.append(dat)
+                    }
+                    
+                    if slotDataArray.count > 0{
+                        filterDataArray = slotDataArray
+                        ageLimit = "All"
+                        feeType = "All"
+                    }else{
+                        showAlert.toggle()
+                    }
+                } catch DecodingError.keyNotFound(let key, let context) {
+                    Swift.print("could not find key \(key) in JSON: \(context.debugDescription)")
+                } catch DecodingError.valueNotFound(let type, let context) {
+                    Swift.print("could not find type \(type) in JSON: \(context.debugDescription)")
+                } catch DecodingError.typeMismatch(let type, let context) {
+                    Swift.print("type mismatch for type \(type) in JSON: \(context.debugDescription)")
+                } catch DecodingError.dataCorrupted(let context) {
+                    Swift.print("data found to be corrupted in JSON: \(context.debugDescription)")
+                } catch let error as NSError {
+                    NSLog("Error in read(from:ofType:) domain= \(error.domain), description= \(error.localizedDescription)")
                 }
-            } catch DecodingError.keyNotFound(let key, let context) {
-                Swift.print("could not find key \(key) in JSON: \(context.debugDescription)")
-            } catch DecodingError.valueNotFound(let type, let context) {
-                Swift.print("could not find type \(type) in JSON: \(context.debugDescription)")
-            } catch DecodingError.typeMismatch(let type, let context) {
-                Swift.print("type mismatch for type \(type) in JSON: \(context.debugDescription)")
-            } catch DecodingError.dataCorrupted(let context) {
-                Swift.print("data found to be corrupted in JSON: \(context.debugDescription)")
-            } catch let error as NSError {
-                NSLog("Error in read(from:ofType:) domain= \(error.domain), description= \(error.localizedDescription)")
-            }
             }
         })
     }
 }
-
-
