@@ -24,7 +24,7 @@ struct ContentView: View {
         
         VStack{
             ScrollView {
-                Text("Find Covid Vaccine Slots in\nIndia 🇮🇳").font(.title).fontWeight(.medium)
+                Text("Find Covid Vaccine Center in\nIndia 🇮🇳").font(.title).fontWeight(.medium)
                     .padding(.top, 3)
                     .multilineTextAlignment(.center)
                 
