@@ -25,7 +25,7 @@ struct ContentView: View {
         VStack{
             ScrollView {
                 Text("Find Covid Vaccine Center \nin India 🇮🇳").font(.title).fontWeight(.medium)
-                    .padding(.top, 8)
+                    //.padding(.top)
                     .multilineTextAlignment(.center)
                 
                 ZStack(){
@@ -213,6 +213,7 @@ struct ContentView: View {
                         }}
                 }.padding()
             }
+            .padding(.top)
             .background(
                 Image("vaccine")
                     .resizable()
@@ -223,7 +224,9 @@ struct ContentView: View {
                 hideKeyboard()
             }
             .onAppear{
+                if self.pincode != ""{
                 self.callApiToGetAllCenter(pincode: self.pincode, date: self.selectedDate)
+                }
             }
         }
     }
