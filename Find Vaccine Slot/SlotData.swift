@@ -30,7 +30,7 @@ struct SlotData: View {
                 Text("Age: \(data.minAgeLimit ?? 0)+").mediumWhiteText()
                 Text("Vaccine: \(data.vaccine ?? "")").mediumWhiteText()
                 
-                Text("Available Capacity:").mediumWhiteText()
+                Text("Available Capacity: \(data.availableCapacity ?? 0)").mediumWhiteText()
                 HStack{
                     HStack{
                         Text("Dose 1:").mediumWhiteText()
