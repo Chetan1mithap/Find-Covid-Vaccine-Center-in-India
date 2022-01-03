@@ -24,8 +24,8 @@ struct ContentView: View {
         
         VStack{
             ScrollView {
-                Text("Find Covid Vaccine Center in\nIndia 🇮🇳").font(.title).fontWeight(.medium)
-                    .padding(.top, 3)
+                Text("Find Covid Vaccine Center \nin India 🇮🇳").font(.title).fontWeight(.medium)
+                    .padding(.top, 8)
                     .multilineTextAlignment(.center)
                 
                 ZStack(){
@@ -33,11 +33,11 @@ struct ContentView: View {
                         .fill(Color.black).opacity(0.7)
                         .cornerRadius(5)
                         .shadow(radius:2)
-                        .frame(height: 270)
+                       // .frame(height: 290)
                     
                     VStack{
                         HStack {
-                            Text("Enter pincode:").bold()
+                            Text("Enter Pincode:").bold()
                                 .font(.title3)
                                 .foregroundColor(.white)
                             Spacer()
@@ -48,10 +48,10 @@ struct ContentView: View {
                                 .multilineTextAlignment(.trailing)
                                 .onReceive(Just(pincode)) { _ in limitText(textLimit) } //For max length of pincode
                                 .frame(width: 120)
-                        }.padding(.top, 1)
+                        }.padding(.top, 15)
                         
                         HStack(spacing: 25) {
-                            Text("Select date:").bold().foregroundColor(.white)
+                            Text("Select Date:").bold().foregroundColor(.white)
                                 .font(.title3)
                             Spacer()
                             DatePicker("", selection: $selectedDate, displayedComponents: .date)
@@ -62,12 +62,26 @@ struct ContentView: View {
                                 .clipped()
                         }.padding(.top, 8)
                         
-                        HStack(spacing: 25) {
+                        HStack(spacing: 5) {
                             Text("Age:").bold().foregroundColor(.white)
                                 .font(.title3)
                             Spacer()
                             
                             HStack{
+                                RadioButtonField(
+                                    id: "15",
+                                    label: "15+",
+                                    color:.white,
+                                    bgColor: .white,
+                                    isMarked: $ageLimit.wrappedValue == "15" ? true : false,
+                                    callback: { selected in
+                                        self.ageLimit = selected
+                                        self.feeType = "All"
+                                        print("Selected age is: \(selected)")
+                                        filterDataArray = slotDataArray.filter({$0.minAgeLimit == 15})
+                                    }
+                                )
+                                
                                 RadioButtonField(
                                     id: "18",
                                     label: "18+",
@@ -173,7 +187,6 @@ struct ContentView: View {
                                 .font(.headline)
                             }
                         }
-                       
                         .alert(isPresented: $showAlert) {
                                             Alert(title: Text(""), message: Text("No data found on this location, please try again"), dismissButton: .default(Text("OK")))
                                         }
@@ -183,11 +196,12 @@ struct ContentView: View {
                         .cornerRadius(5)
                         .shadow(radius:2)
                         .padding(.top, 15)
+                        .padding(.bottom, 15)
                     }.padding(.horizontal)
                     Spacer()
-                } .padding()
+                }.padding()
                 
-                ScrollView {
+                ScrollView { // Showing Api Data in List
                     ForEach(filterDataArray) { data in
                         ZStack(){
                             Rectangle()
