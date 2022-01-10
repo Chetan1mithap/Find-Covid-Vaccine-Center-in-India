@@ -213,6 +213,7 @@ struct ContentView: View {
                         }}
                 }.padding()
             }
+            .ignoresSafeArea()
             .padding(.top)
             .background(
                 Image("vaccine")
